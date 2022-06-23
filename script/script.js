@@ -94,3 +94,27 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// --------------------------------------------------------------------sidebar
+
+const buttonSidebar = document.querySelector('.mobile-img');
+const sidebar = document.querySelector('.sidebar');
+
+const goSidebar = () => {
+    sidebar.classList.toggle('goSidebar');
+}
+
+buttonSidebar.addEventListener('click', goSidebar)
+
+// -------------------------------------------------------------------------burger
+
+var menuButton = document.querySelector('.menuButton');
+var menu = document.querySelector('.burger-menu');
+
+menuButton.addEventListener ('click', click)
+
+function click(){
+  menuButton.classList.toggle('menuButton-active')
+  menu.classList.toggle('header-active');
+  langToggle.classList.toggle('languageTogglerNavActive')
+  console.log('клик')
+}

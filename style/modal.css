@@ -74,6 +74,7 @@
 }
 
 .modal-header-text {
+   text-align: center;
    width: 17.865vw;
    font-weight: 400;
    font-size: 0.8vw;

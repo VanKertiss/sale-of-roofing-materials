@@ -31,6 +31,10 @@ body {
 
 /* -----------------------------------------------------------------------Header-first */
 
+.burger-menu{
+    display: none;
+}
+
 .header-container-first {
     width: 100%;
     display: flex;
@@ -143,9 +147,16 @@ body {
     margin-bottom: 0.92vw;
 }
 
+.burger-header-social-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-social-text-boob {
     border-radius: 50%;
-    border: 0.104vw #12C868 solid;
+    width: 2px;
+    border: 50px #12C868 solid;
 }
 
 .header-social-text-text {
