@@ -1,4 +1,217 @@
+:root {
+    --default-color-text: #1C1C1C;
+}
+
+
+
 @media (max-width: 992px) {
+
+    .menuButton {
+        position: absolute;
+        display: block;
+        top: 24px;
+        right: 22px;
+        width: 20px;
+        height: 3px;
+        background-color: black;
+        border: none;
+    }
+
+    .menuButton::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        transition: transform 0.5s;
+        background-color: black;
+        margin-top: 6px;
+    }
+
+    .menuButton::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        display: block;
+        width: 20px;
+        height: 3px;
+        transition: transform 0.5s;
+        background-color: black;
+        margin-top: 12px;
+    }
+
+    .menuButton-active {
+        height: 0;
+    }
+
+    .menuButton-active::before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+
+    .menuButton-active::after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+
+    /* ---------------------------------------Burger */
+
+    .burger-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 64px;
+        right: 0;
+        background-color: #EDF2F5;
+        width: 320px;
+        height: 504px;
+        padding-bottom: 40px;
+        z-index: 2;
+    }
+
+    .burger-logo-link {
+        width: 23px;
+        height: 22px;
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+
+    .burger-nav-links {
+        list-style-type: none;
+
+    }
+
+    .burger-nav-links li {
+        margin-bottom: 20px;
+    }
+
+    .burger-nav-link-item {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: var(--default-color-text);
+        text-transform: uppercase;
+    }
+
+    .burger-header-text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+        line-height: 14px;
+        color: var(--default-color-text);
+    }
+
+    .burger-header-download {
+        display: flex;
+        align-items: center;
+    }
+
+    .burger-header-download-img {
+        width: 44px;
+    }
+
+    .burger-header-download-link {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        color: var(--default-color-text);
+        border-bottom: #12C868 dotted 0.104vw;
+        padding-bottom: 6px;
+    }
+
+    .burger-header-social-text-boob{
+        border-radius: 50%;
+        border: 0.104vw #12C868 solid;
+    }
+
+    .burger-header-social-text-text{
+        margin-left: 5px;
+        font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 11px;
+    }
+    
+    .burger-header-social-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+    .burger-header-social-img{
+        width: 44px;
+        margin-right: 14px;
+    }
+
+    .logo-link {
+        margin-top: 24px;
+        width: 23px;
+        height: 22px;
+    }
+
+    .header-active {
+        display: flex;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 1.823vw;
+        max-width: 550px;
+        width: 90%;
+        max-height: 650px;
+        height: 90%;
+        margin: auto;
+        margin-top: 10vw;
+    }
+
+    .modal-header-title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .modal-header-text {
+        width: 342px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .modal-header-time {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .modal-form {
+        width: 356px;
+    }
+
+    .modal-label-input-phone {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .modal-input-phone {
+        margin: auto;
+        width: 356px;
+        height: 85px;
+        border-radius: 50px;
+    }
+
     .container {
         max-width: 900px;
         width: 90%;
@@ -148,6 +361,9 @@
 
 @media(max-width:450px) {
 
+
+
+
     body {
         background: url(../img/bg-mob.png), #EDF2F5;
         ;
@@ -245,21 +461,14 @@
         text-align: left;
         margin-left: 23px;
     }
-    
+
     .item-container {
         display: flex;
         align-items: center;
     }
-    
+
     .mobile-img {
         display: block;
         transform: rotate('45deg');
     }
 }
-
-
-
-
-
-
-
