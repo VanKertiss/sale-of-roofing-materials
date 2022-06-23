@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/modal.css">
     <title>sale-of-roofing-materials</title>
 </head>
+
 <body>
     <div class="container">
         <section class="header-container-first">
             <a class="logo-link" href="#"><img src="./img/logo-svg.svg" alt=""></a>
             <nav class="nav-links">
-                <li ><a href="#" class="nav-link-item">каталог</a> </li>
-                <li ><a href="#" class="nav-link-item">Преимущества</a> </li>
-                <li ><a href="#" class="nav-link-item">Примеры работ</a></li>
-                <li ><a href="#" class="nav-link-item">монтаж</a></li>
-                <li ><a href="#" class="nav-link-item">отзывы</a></li>
-                <li ><a href="#" class="nav-link-item">Ответы на вопросы</a></li>
-                <li ><a href="#" class="nav-link-item">контакты</a></li>
+                <li><a href="#" class="nav-link-item">каталог</a> </li>
+                <li><a href="#" class="nav-link-item">Преимущества</a> </li>
+                <li><a href="#" class="nav-link-item">Примеры работ</a></li>
+                <li><a href="#" class="nav-link-item">монтаж</a></li>
+                <li><a href="#" class="nav-link-item">отзывы</a></li>
+                <li><a href="#" class="nav-link-item">Ответы на вопросы</a></li>
+                <li><a href="#" class="nav-link-item">контакты</a></li>
             </nav>
         </section>
         <section class="header-container-second">
             <div class="header-text">
-               <span class="header-span-text"><span class="strong">Кровельные и фасадные материалы</span>  в Тюмени и области</span>
-               <span class="header-span-text"><br> Профессиональный монтаж <br> с 2010 года</span> 
+                <span class="header-span-text"><span class="strong">Кровельные и фасадные материалы</span> в Тюмени и
+                    области</span>
+                <span class="header-span-text"><br> Профессиональный монтаж <br> с 2010 года</span>
             </div>
             <div class="header-download">
                 <img class="header-download-img" src="./img/download-PDF.png" alt="">
@@ -40,55 +44,91 @@
                     <div class="header-social-text-text">Отвечаем <span class="strong">онлайн</span></div>
                 </div>
                 <div class="header-social-images">
-                    <a target="_blank" href="https://wa.me/79200000000" class="header-social-link"><img src="./img/viber.png" alt="" class="header-social-img"></a>
-                    <a target="_blank" href="viber://chat?number=%2B79200000000" class="header-social-link"><img src="./img/whatsapp.png" alt="" class="header-social-img"></a>
-                    <a target="_blank" href="tg://resolve?domain=username" class="header-social-link"><img src="./img/telegram.png" alt="" class="header-social-img"></a>
-                    
-                    
-                    
+                    <a target="_blank" href="https://wa.me/79200000000" class="header-social-link"><img
+                            src="./img/viber.png" alt="" class="header-social-img"></a>
+                    <a target="_blank" href="viber://chat?number=%2B79200000000" class="header-social-link"><img
+                            src="./img/whatsapp.png" alt="" class="header-social-img"></a>
+                    <a target="_blank" href="tg://resolve?domain=username" class="header-social-link"><img
+                            src="./img/telegram.png" alt="" class="header-social-img"></a>
+
+
+
                 </div>
             </div>
             <div class="header-phone">
                 <div class="phone-text">
-                    <span class="strong">Пн-Пт</span>  9:00 - 18:00, <span class="strong">Сб</span> 10:00 - 18:00
+                    <span class="strong">Пн-Пт</span> 9:00 - 18:00, <span class="strong">Сб</span> 10:00 - 18:00
                 </div>
                 <a href="tel:+78002225460" class="phone">8 (800) 222-54-60</a>
-                <a href="#" class="call-me">Позвоните мне</a>
+                <a href="#" class="openModal call-me">Позвоните мне</a>
             </div>
         </section>
+        <div class="modal" id="myModal">
+            <div class="modal-content">
+                <img src="./img/close.png" class="close">
+                <div class="modal-header">
+                    <div class="modal-header-title">Быстро<br>оставить заявку</div>
+                    <div class="modal-header-text">Введите номер, мы позвоним вам в течение 10 минут в рабочее время
+                    </div>
+                    <div class="modal-header-time">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</div>
+                </div>
+                <form action="./php/post.php" method="post" class="modal-form" enctype="text/plain">
+                    <label for="phone" class=" modal-label-input-phone">Введите номер телефона</label>
+                    <input class="tel modal-input-phone" placeholder="+7 ( _ _ _) _ _ _ - _ _ - _ _" type="tel"
+                        name="phone" id="phone">
+                    <button type="submit" class="modal-button-submit-form"> Позвоните мне
+                        <img src="./img/arrow.png" alt="" class="modal-button-img">
+                    </button>
+                    <div class="checkbox-container">
+                        <input class="modal-input-checkbox" type="checkbox" name="" id="checkbox">
+                        <label class="modal-label-input-checkbox" for="checkbox">Нажимая кнопку вы соглашаетесь
+                            с условиями <span class="orange">Политики конфиденциальности</span></label>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
         <section class="main-container">
             <div class="sidebar">
-                <div class="sidebar-item"><span class="strong">Гарантия от 50 лет</span> на материалы и 5 лет на монтаж</div>
+                <div class="sidebar-item"><span class="strong">Гарантия от 50 лет</span> на материалы и 5 лет на монтаж
+                </div>
                 <img src="./img/menu_shadow+2.png" alt="" class="menu-shadow">
-                <div class="sidebar-item"><span class="strong">Замер, монтажный проект</span> и<br>еще 4 услуги<br>бесплатно</div>
+                <div class="sidebar-item"><span class="strong">Замер, монтажный проект</span> и<br>еще 4
+                    услуги<br>бесплатно</div>
                 <img src="./img/menu_shadow+2.png" alt="" class="menu-shadow">
                 <div class="sidebar-item"><span class="strong">Сметы<br>точны</span> до копейки</div>
                 <img src="./img/menu_shadow+2.png" alt="" class="menu-shadow">
                 <div class="sidebar-item"><span class="strong">Поэтапная оплата, </span>кредит или рассрочка</div>
                 <img src="./img/menu_shadow+2.png" alt="" class="menu-shadow">
-                <div class="sidebar-item"><span class="strong">Наши крыши в каждом поселке</span><br>и дачном сообществе региона</div>
+                <div class="sidebar-item"><span class="strong">Наши крыши в каждом поселке</span><br>и дачном сообществе
+                    региона</div>
             </div>
             <div class="main-content">
-                <div class="main-title">Продажа <span class="strong">кровельных материалов</span> в Тюмени и Тюменской области</div>
+                <div class="main-title">Продажа <span class="strong">кровельных материалов</span> в Тюмени и Тюменской
+                    области</div>
                 <div class="main-pre-title">
                     <img src="./img/pre-title-img.png" alt="" class="main-pre-title-img">
                     и монтаж под ключ
                 </div>
                 <div class="main-buttons">
-                    <button class="main-button main-button-green">Рассчитать стоимость<br> материалов и монтажа 
+                    <button class="main-button main-button-green">Рассчитать стоимость<br> материалов и монтажа
                         <img src="./img/arrow.png" alt="" class="main-button-arrow"></button>
-                    <button class="main-button main-button-orange">записаться на<br>просмотр объектов 
+                    <button class="main-button main-button-orange">записаться на<br>просмотр объектов
                         <img src="./img/arrow.png" alt="" class="main-button-arrow"></button>
                 </div>
                 <div class="main-text-content">
                     <img src="./img/icon.png" alt="" class="main-content-img">
-                    <div class="main-content-text"><span class="strong">Ответьте на несколько вопросов и получите</span> сметную стоимость
-                         и 2 подарка за экономию нашего времени</div>
+                    <div class="main-content-text"><span class="strong">Ответьте на несколько вопросов и получите</span>
+                        сметную стоимость
+                        и 2 подарка за экономию нашего времени</div>
                 </div>
             </div>
         </section>
     </div>
-
     <script src="./script/script.js"></script>
+
+
 </body>
+
 </html>
