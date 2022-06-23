@@ -1,6 +1,13 @@
 const openModal = document.querySelector('.openModal');
 const modal = document.querySelector('#myModal');
 const span = document.querySelector('.close');
+const success = document.querySelector('.modal-submit');
+const modalContent = document.querySelector('.modal-content');
+
+const form = document.querySelector('.modal-form');
+const formSubmit = form.querySelector('.modal-button-submit-form');
+const phone = form.querySelector('.modal-input-phone');
+const checkbox = form.querySelector('.modal-input-checkbox');
 
 openModal.onclick = function () {
     modal.style.display = "block";
@@ -8,13 +15,45 @@ openModal.onclick = function () {
 
 span.onclick = function () {
     modal.style.display = "none";
+    success.style.display = 'none';
+    modalContent.style.display = 'block';
+
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      success.style.display = 'none';
+      modalContent.style.display = 'block';
+
     }
   }
+
+  // --------------------------------------------------------------------form validate
+
+const getSuccess = () => {
+    modalContent.style.display = 'none';
+    success.style.display = 'flex';
+}
+
+const closeModal = () => {
+    modal.style.display = "none";
+    success.style.display = 'none';
+    modalContent.style.display = 'block';
+}
+
+const validate = (e) => {
+    e.preventDefault();
+    console.log(e)
+    console.log('phone ' + phone.value,', checked ' + checkbox.checked);
+    if (phone.value && checkbox.checked === true) {
+        //form.submit();
+        getSuccess();
+    }
+    setTimeout(closeModal, 3000);
+}
+
+form.addEventListener('submit', validate);
 
 // ------------------------------------------------------mask input tel
 
@@ -55,18 +94,3 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 
-// --------------------------------------------------------------------form validate
-
-const form = document.querySelector('.modal-form');
-const formSubmit = form.querySelector('.modal-button-submit-form');
-const phone = form.querySelector('.modal-input-phone');
-const checkbox = form.querySelector('.modal-input-checkbox');
-
-const validate = (e) => {
-    e.preventDefault();
-    console.log(e)
-    console.log('phone ' + phone.value,', checked ' + checkbox.checked);
-    if (phone.value && checkbox.checked === true) form.submit();
-}
-
-form.addEventListener('submit', validate);

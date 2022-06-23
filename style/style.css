@@ -16,6 +16,7 @@ body {
     font-family: 'Montserrat';
     background-image: url(../img/BG.png);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .strong {
@@ -63,6 +64,7 @@ body {
 
 .nav-link-item:hover{
     color: #F38120;
+    text-decoration: underline;
 }
 
 /* ---------------------------------------------------------------------------Header second */
@@ -224,6 +226,11 @@ body {
     margin-top: 2.71vw;
 }
 
+.mobile-img{
+    display: none;
+    width: 33px;
+}
+
 .sidebar-item {
     cursor: pointer;
     text-align: center;
@@ -238,6 +245,10 @@ body {
 .main-content {
     margin-top: 4.375vw;
     margin-left: 3.7vw;
+}
+
+.menu-shadow{
+    width: 9.844vw;
 }
 
 .main-title {
