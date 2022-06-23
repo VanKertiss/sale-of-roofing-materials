@@ -48,7 +48,7 @@
         width: 70%;
         text-align: center;
         font-size: 18px;
-line-height: 30px;
+        line-height: 30px;
     }
 
     .main-content-text {
@@ -79,7 +79,7 @@ line-height: 30px;
         border-radius: 50px;
     }
 
-    .main-button-arrow{
+    .main-button-arrow {
         width: 15px;
         margin-left: 12px;
     }
@@ -128,7 +128,7 @@ line-height: 30px;
         width: 30%;
     }
 
-    .main-button{
+    .main-button {
         width: 276px;
         height: 60px;
     }
@@ -148,30 +148,31 @@ line-height: 30px;
 
 @media(max-width:450px) {
 
-    body{
-        background: url(../img/bg-mob.png),  #EDF2F5;;
+    body {
+        background: url(../img/bg-mob.png), #EDF2F5;
+        ;
         background-position: top;
         height: 601px;
         overflow: hidden;
     }
 
-    .main-container{
+    .main-container {
         flex-direction: column-reverse;
     }
 
-    .sidebar{
+    .sidebar {
         width: 225px;
         height: 367px;
         background-position: center top 60%;
     }
 
-    .sidebar-item{
+    .sidebar-item {
         width: 137px;
-font-size: 10px;
-line-height: 17px;
+        font-size: 10px;
+        line-height: 17px;
     }
 
-    .menu-shadow{
+    .menu-shadow {
         width: 202px;
         height: 20px;
     }
@@ -189,11 +190,11 @@ line-height: 17px;
         margin-right: 22px;
     }
 
-    .header-logo-img{
+    .header-logo-img {
         width: 51px;
     }
 
-    .header-phone{
+    .header-phone {
         margin-left: 0;
     }
 
@@ -202,7 +203,7 @@ line-height: 17px;
         margin: 0;
     }
 
-    .main-content-img{
+    .main-content-img {
         width: 11px;
     }
 
@@ -217,38 +218,48 @@ line-height: 17px;
         width: 37px;
     }
 
-    .main-button{
+    .main-button {
         margin-top: 12px;
         font-weight: 600;
-font-size: 10px;
-line-height: 16px;
+        font-size: 10px;
+        line-height: 16px;
     }
 
-    .main-button-orange{
+    .main-button-orange {
         margin-bottom: 69px;
     }
 
-    .sidebar{
+    .sidebar {
         display: block;
+        margin: auto;
     }
 
-    .sidebar-item{
+    .goSidebar {
+        position: absolute;
+        top: 80px;
+        left: 55px;
+        transition: transform .2s ease-in-out;
+    }
+
+    .sidebar-item {
         text-align: left;
         margin-left: 23px;
     }
-
-    .item-container{
+    
+    .item-container {
         display: flex;
         align-items: center;
     }
-
-    .mobile-img{
+    
+    .mobile-img {
         display: block;
         transform: rotate('45deg');
     }
-
-
-
-
-
 }
+
+
+
+
+
+
+

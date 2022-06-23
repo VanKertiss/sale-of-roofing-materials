@@ -94,3 +94,13 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// --------------------------------------------------------------------sidebar
+
+const buttonSidebar = document.querySelector('.mobile-img');
+const sidebar = document.querySelector('.sidebar');
+
+const goSidebar = () => {
+    sidebar.classList.toggle('goSidebar');
+}
+
+buttonSidebar.addEventListener('click', goSidebar)
