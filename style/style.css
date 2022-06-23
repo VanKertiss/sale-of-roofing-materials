@@ -155,8 +155,7 @@ body {
 
 .header-social-text-boob {
     border-radius: 50%;
-    width: 2px;
-    border: 50px #12C868 solid;
+    border: 3px #12C868 solid;
 }
 
 .header-social-text-text {
