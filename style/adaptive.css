@@ -57,10 +57,11 @@
         margin-top: 0;
     }
 
+
+
     /* ---------------------------------------Burger */
 
     .burger-menu {
-        display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
@@ -71,6 +72,10 @@
         height: 504px;
         padding-bottom: 40px;
         z-index: 2;
+    }
+
+    .header-active {
+        display: flex;
     }
 
     .burger-logo-link {
@@ -150,67 +155,198 @@
         margin-right: 14px;
     }
 
-    .logo-link {
-        margin-top: 24px;
-        width: 23px;
-        height: 22px;
-    }
-
-    .header-active {
-        display: flex;
-    }
+    /* ---------------------------------------------------------------modal adaptive */
 
     .modal-content {
+        animation-name: animate;
+        animation-duration: 0.5s
+     }
+     
+     .close {
+        margin-left: 448px;
+        margin-top: 45px;
+        cursor: pointer;
+     }
+     
+     .modal {
+        top: -19px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        display: none;
+        /* Скрыто по умолчанию */
+        background-color: rgb(0, 0, 0);
+        /* Затемнение фона */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Полупрозрачное затемнение */
+        z-index: 1;
+        /* Фон на нижнем слое */
+        overflow: none;
+        /* При необходимости, то появиться прокрутка */
+     }
+     
+     .modal-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #FFF;
-        border-radius: 1.823vw;
-        max-width: 550px;
-        width: 90%;
-        max-height: 650px;
-        height: 90%;
+        border-radius: 35px;
+        width: 550px;
+        height: 650px;
         margin: auto;
-        margin-top: 10vw;
-    }
-
-    .modal-header-title {
+        margin-top: 19px;
+     }
+     
+     .modal-header {
+        margin-top: 5px;
+     }
+     
+     .modal-header-title {
         font-weight: 500;
         font-size: 30px;
         line-height: 30px;
-    }
-
-    .modal-header-text {
-        width: 342px;
-        margin: auto;
-        margin-bottom: 20px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--default-color-text);
+        margin-bottom: 17px;
+     }
+     
+     .modal-header-text {
+        text-align: center;
+        width: 343px;
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;
-    }
-
-    .modal-header-time {
+        line-height: var();
+        text-align: center;
+        color: #000000;
+        margin-bottom: 25px;
+     }
+     
+     .modal-header-time {
+        text-align: center;
         font-weight: 400;
         font-size: 12px;
         line-height: 15px;
-    }
-
-    .modal-form {
-        width: 356px;
-    }
-
-    .modal-label-input-phone {
+        margin-bottom: 25px;
+     }
+     
+     .modal-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 368px;
+        margin: 0 auto;
+     }
+     
+     .modal-label-input-phone {
+        font-style: normal;
         font-weight: 400;
         font-size: 12px;
-        line-height: 15px;
-    }
-
-    .modal-input-phone {
-        margin: auto;
-        width: 356px;
+        line-height:15px;
+        color: #000000;
+        margin-left: 2vw;
+     }
+     
+     .modal-input-phone {
+        box-sizing: border-box;
+        margin-top: 17px;
+        width: 100%;
         height: 85px;
+        background: #FFFFFF;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
         border-radius: 50px;
-    }
+        padding-left: 46px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #A7A7A7;
+        border: none;
+        outline: none;
+        margin-bottom: 24px;
+     }
+     
+     .modal-input-phone::placeholder{
+        color: #A7A7A7;
+     }
+     
+     .modal-button-submit-form{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        height: 85px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+        border-radius: 50px;
+        background: #F38120;
+        border: none;
+        outline: none;
+        color: #FFF;
+        font-weight: 600;
+     font-size: 17px;
+     line-height: 22px;
+     margin-bottom: 19px;
+     }
+     
+     .modal-button-img{
+        width: 22px;
+        transform: rotate(45deg);
+        margin-left: 18px;
+     }
+     
+     .checkbox-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+     }
+     
+     .modal-input-checkbox{
+        background-color: #F38120;
+     }
+     
+     .modal-label-input-checkbox{
+        margin-left:19px;
+        font-weight: 500;
+     font-size: 12px;
+     line-height: 22px;
+     color: var(--default-color-text);
+     }
+     
+     .orange{
+        color: #F38120;
+     }
+     
+     .modal-submit{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 35px;
+        width: 550px;
+        height: 650px;
+        margin: auto;
+        margin-top: 19px;
+        
+     }
+     
+     .success-img{
+        margin-top: 100px;
+        margin-bottom: 100px;
+     }
+     
+     .success-text{
+        width: 19vw;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--default-color-text);
+        margin-bottom: 17px;
+     }
+
 
     .container {
         max-width: 900px;
@@ -357,6 +493,200 @@
         max-width: 250px;
         width: 50%;
     }
+
+
+    .modal-content {
+        animation-name: animate;
+        animation-duration: 0.5s
+     }
+     
+     .close {
+        margin-left: 448px;
+        margin-top: 45px;
+        cursor: pointer;
+     }
+     
+     .modal {
+        top: -19px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        display: none;
+        /* Скрыто по умолчанию */
+        background-color: rgb(0, 0, 0);
+        /* Затемнение фона */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Полупрозрачное затемнение */
+        z-index: 1;
+        /* Фон на нижнем слое */
+        overflow: none;
+        /* При необходимости, то появиться прокрутка */
+     }
+     
+     .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 35px;
+        width: 350px;
+        height: 550px;
+        margin: auto;
+        margin-top: 19px;
+     }
+     
+     .modal-header {
+        margin-top: 5px;
+     }
+     
+     .modal-header-title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--default-color-text);
+        margin-bottom: 17px;
+     }
+     
+     .modal-header-text {
+        text-align: center;
+        width: 343px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: var();
+        text-align: center;
+        color: #000000;
+        margin-bottom: 25px;
+     }
+     
+     .modal-header-time {
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 25px;
+     }
+     
+     .modal-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 368px;
+        margin: 0 auto;
+     }
+     
+     .modal-label-input-phone {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height:15px;
+        color: #000000;
+        margin-left: 38px;
+     }
+     
+     .modal-input-phone {
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: 17px;
+        width: 80%;
+        height: 85px;
+        background: #FFFFFF;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+        border-radius: 50px;
+        padding-left: 46px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #A7A7A7;
+        border: none;
+        outline: none;
+        margin-bottom: 24px;
+     }
+     
+     .modal-input-phone::placeholder{
+        color: #A7A7A7;
+     }
+     
+     .modal-button-submit-form{
+        margin: 0 auto;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width: 80%;
+        height: 85px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
+        border-radius: 50px;
+        background: #F38120;
+        border: none;
+        outline: none;
+        color: #FFF;
+        font-weight: 600;
+     font-size: 17px;
+     line-height: 22px;
+     margin-bottom: 19px;
+     }
+     
+     .modal-button-img{
+        width: 22px;
+        transform: rotate(45deg);
+        margin-left: 18px;
+     }
+     
+     .checkbox-container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+     }
+     
+     .modal-input-checkbox{
+        background-color: #F38120;
+     }
+     
+     .modal-label-input-checkbox{
+        margin-left:19px;
+        font-weight: 500;
+     font-size: 12px;
+     line-height: 22px;
+     color: var(--default-color-text);
+     }
+     
+     .orange{
+        color: #F38120;
+     }
+     
+     .modal-submit{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFF;
+        border-radius: 35px;
+        width: 550px;
+        height: 650px;
+        margin: auto;
+        margin-top: 19px;
+        
+     }
+     
+     .success-img{
+        margin-top: 100px;
+        margin-bottom: 100px;
+     }
+     
+     .success-text{
+        width: 19vw;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--default-color-text);
+        margin-bottom: 17px;
+     }
+
 }
 
 @media(max-width:450px) {
