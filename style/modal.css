@@ -1,0 +1,179 @@
+:root {
+   --default-color-text: #1C1C1C;
+   --font-size-14px: 0.730vw;
+   --font-size-12px: 0.625vw;
+   --line-height-15px: 0.78vw;
+   --line-height-22px: 1.146vw;
+}
+
+.modal-content {
+   animation-name: animate;
+   animation-duration: 0.5s
+}
+
+@keyframes animate {
+   from {
+      top: -320px;
+      opacity: 0
+   }
+
+   to {
+      top: 0;
+      opacity: 1
+   }
+}
+
+.close {
+   margin-left: 23.333vw;
+   margin-top: 2.344vw;
+   cursor: pointer;
+}
+
+.modal {
+   top: 0;
+   left: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: none;
+   /* Скрыто по умолчанию */
+   background-color: rgb(0, 0, 0);
+   /* Затемнение фона */
+   background-color: rgba(0, 0, 0, 0.5);
+   /* Полупрозрачное затемнение */
+   z-index: 1;
+   /* Фон на нижнем слое */
+   overflow: none;
+   /* При необходимости, то появиться прокрутка */
+}
+
+.modal-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #FFF;
+   border-radius: 1.823vw;
+   width: 28.646vw;
+   height: 33.854vw;
+   margin: auto;
+   margin-top: 10vw;
+}
+
+.modal-header {
+   margin-top: 0.24vw;
+}
+
+.modal-header-title {
+   font-weight: 500;
+   font-size: 1.563vw;
+   line-height: 1.563vw;
+   text-align: center;
+   letter-spacing: 0.02em;
+   color: var(--default-color-text);
+   margin-bottom: 0.8vw;
+}
+
+.modal-header-text {
+   width: 17.865vw;
+   font-weight: 400;
+   font-size: 0.8vw;
+   line-height: var();
+   text-align: center;
+   color: #000000;
+   margin-bottom: 1.25vw;
+}
+
+.modal-header-time {
+   text-align: center;
+   font-weight: 400;
+   font-size: var(--font-size-12px);
+   line-height: var(--line-height-15px);
+   margin-bottom: 1.458vw;
+}
+
+.modal-form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   width: 19.167vw;
+   margin: 0 auto;
+}
+
+.modal-label-input-phone {
+   font-style: normal;
+   font-weight: 400;
+   font-size: var(--font-size-12px);
+   line-height: var(--line-height-15px);
+   color: #000000;
+   margin-left: 2vw;
+}
+
+.modal-input-phone {
+   box-sizing: border-box;
+   margin-top: 0.8vw;
+   width: 100%;
+   height: 4.427vw;
+   background: #FFFFFF;
+   box-shadow: 0 0 2.604vw rgba(0, 0, 0, 0.05);
+   border-radius: 2.604vw;
+   padding-left: 2.396vw;
+   font-weight: 400;
+   font-size: 0.9vw;
+   line-height: 1.1vw;
+   letter-spacing: 0.02em;
+   color: #A7A7A7;
+   border: none;
+   outline: none;
+   margin-bottom: 1.25vw;
+}
+
+.modal-input-phone::placeholder{
+   color: #A7A7A7;
+}
+
+.modal-button-submit-form{
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   width: 100%;
+   height: 4.427vw;
+   box-shadow: 0 0 2.604vw rgba(0, 0, 0, 0.05);
+   border-radius: 2.604vw;
+   background: #F38120;
+   border: none;
+   outline: none;
+   color: #FFF;
+   font-weight: 600;
+font-size: 0.8vw;
+line-height: 1.1vw;
+margin-bottom: 1vw;
+}
+
+.modal-button-img{
+   width: 1.1vw;
+   transform: rotate(45deg);
+   margin-left: 0.9vw;
+}
+
+.checkbox-container{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.modal-input-checkbox{
+   background-color: #F38120;
+}
+
+.modal-label-input-checkbox{
+   margin-left: 1vw;
+   font-weight: 500;
+font-size: var(--font-size-12px);
+line-height: var(--line-height-22px);
+color: var(--default-color-text);
+}
+
+.orange{
+   color: #F38120;
+}

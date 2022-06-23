@@ -12,6 +12,7 @@
 }
 
 body {
+    position: relative;
     font-family: 'Montserrat';
     background-image: url(../img/BG.png);
     background-size: cover;
