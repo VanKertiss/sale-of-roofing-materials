@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/modal.css">
+    <link rel="stylesheet" href="./style/adaptive.css">
     <title>sale-of-roofing-materials</title>
 </head>
 
@@ -64,6 +67,12 @@
             </div>
         </section>
         <div class="modal" id="myModal">
+            <div class="modal-submit">
+                <img class="success-img" src="./img/ok.png" alt="">
+                <div class="success-text">У вас все получилось,
+                    <span class="orange">мы скоро перезвоним!</span>
+                </div>
+            </div>
             <div class="modal-content">
                 <img src="./img/close.png" class="close">
                 <div class="modal-header">
@@ -72,10 +81,10 @@
                     </div>
                     <div class="modal-header-time">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</div>
                 </div>
-                <form action="./php/post.php" method="post" class="modal-form" enctype="text/plain">
+                <form action="" method="POST" class="modal-form" enctype="text/plain">
                     <label for="phone" class=" modal-label-input-phone">Введите номер телефона</label>
                     <input class="tel modal-input-phone" placeholder="+7 ( _ _ _) _ _ _ - _ _ - _ _" type="tel"
-                        name="phone" id="phone">
+                        name="name" id="phone">
                     <button type="submit" class="modal-button-submit-form"> Позвоните мне
                         <img src="./img/arrow.png" alt="" class="modal-button-img">
                     </button>
@@ -91,8 +100,12 @@
         </div>
         <section class="main-container">
             <div class="sidebar">
-                <div class="sidebar-item"><span class="strong">Гарантия от 50 лет</span> на материалы и 5 лет на монтаж
+                <div class="item-container">
+                    <div class="sidebar-item"><span class="strong">Гарантия от 50 лет</span> на материалы и 5 лет на
+                        монтаж</div>
+                    <img src="./img/mobile-img.png" alt="" class="animate__slow animate__infinite animate__animated animate__bounce mobile-img">
                 </div>
+
                 <img src="./img/menu_shadow+2.png" alt="" class="menu-shadow">
                 <div class="sidebar-item"><span class="strong">Замер, монтажный проект</span> и<br>еще 4
                     услуги<br>бесплатно</div>

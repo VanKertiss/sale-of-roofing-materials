@@ -1,0 +1,254 @@
+@media (max-width: 992px) {
+    .container {
+        max-width: 900px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .modal-content {
+        margin-top: 20%;
+    }
+
+    .header-container-second {
+        justify-content: space-around;
+        margin-top: 0;
+    }
+
+    .header-container-first,
+    .header-social {
+        display: none;
+    }
+
+    .main-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-buttons {
+        flex-direction: column;
+        order: 4;
+    }
+
+    .main-text-content {
+        order: 3;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .header-download,
+    .header-text {
+        display: none;
+    }
+
+    .main-title {
+        width: 70%;
+        text-align: center;
+        font-size: 18px;
+line-height: 30px;
+    }
+
+    .main-content-text {
+        width: 70%;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .main-pre-title {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .main-content-text {
+        text-align: center;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .main-button {
+        height: 60px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        border-radius: 50px;
+    }
+
+    .main-button-arrow{
+        width: 15px;
+        margin-left: 12px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    .header-logo,
+    .header-phone {
+        height: 70px;
+    }
+
+    .phone-text {
+        font-weight: 400;
+        font-size: 7px;
+        line-height: 9px;
+    }
+
+    .phone {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .call-me {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media(max-width: 597px) {
+    .header-container-second {
+        justify-content: center;
+    }
+
+    .header-logo,
+    .header-phone {
+        margin-left: 20px;
+        max-width: 200px;
+        width: 30%;
+    }
+
+    .main-button{
+        width: 276px;
+        height: 60px;
+    }
+}
+
+@media(max-width:500px) {
+    .header-logo {
+        width: 75px;
+        height: 52px;
+    }
+
+    .header-phone {
+        max-width: 250px;
+        width: 50%;
+    }
+}
+
+@media(max-width:450px) {
+
+    body{
+        background: url(../img/bg-mob.png),  #EDF2F5;;
+        background-position: top;
+        height: 601px;
+        overflow: hidden;
+    }
+
+    .main-container{
+        flex-direction: column-reverse;
+    }
+
+    .sidebar{
+        width: 225px;
+        height: 367px;
+        background-position: center top 60%;
+    }
+
+    .sidebar-item{
+        width: 137px;
+font-size: 10px;
+line-height: 17px;
+    }
+
+    .menu-shadow{
+        width: 202px;
+        height: 20px;
+    }
+
+    .container {
+        margin: 0 22px;
+    }
+
+    .header-container-second {
+        justify-content: flex-start;
+    }
+
+    .header-logo {
+        margin-left: 0;
+        margin-right: 22px;
+    }
+
+    .header-logo-img{
+        width: 51px;
+    }
+
+    .header-phone{
+        margin-left: 0;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-content-img{
+        width: 11px;
+    }
+
+    .main-title {
+        margin-top: 34px;
+        width: 100%;
+    }
+
+    .main-pre-title-img {
+        margin-top: 18px;
+        margin-bottom: 6px;
+        width: 37px;
+    }
+
+    .main-button{
+        margin-top: 12px;
+        font-weight: 600;
+font-size: 10px;
+line-height: 16px;
+    }
+
+    .main-button-orange{
+        margin-bottom: 69px;
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+    .sidebar-item{
+        text-align: left;
+        margin-left: 23px;
+    }
+
+    .item-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-img{
+        display: block;
+        transform: rotate('45deg');
+    }
+
+
+
+
+
+}
