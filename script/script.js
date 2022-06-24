@@ -49,8 +49,9 @@ const validate = (e) => {
     if (phone.value && checkbox.checked === true) {
         //form.submit();
         getSuccess();
+        setTimeout(closeModal, 3000);
     }
-    setTimeout(closeModal, 3000);
+    
 }
 
 form.addEventListener('submit', validate);
