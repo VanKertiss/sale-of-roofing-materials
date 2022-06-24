@@ -691,7 +691,9 @@
 
 @media(max-width:450px) {
 
-
+    .burger-menu{
+        width: 100%;
+    }
 
 
     body {
